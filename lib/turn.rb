@@ -49,8 +49,7 @@ def turn(board)
   if valid_move?(board,index)
     move(board, index, token = "X")
     display_board(board)
-  else
-    puts "That was an invalid selection. Please choose again!"
+  elsif !valid_move?(board, index)
     input_to_index(user_input)
 
   end
