@@ -50,7 +50,7 @@ def turn(board)
     move(board, index, token = "X")
     display_board(board)
   elsif !valid_move?(board, index)
-    input_to_index(user_input)
+    turn(board)
 
   end
 
