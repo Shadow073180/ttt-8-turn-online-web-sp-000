@@ -33,6 +33,7 @@ def move(board, index, token = "X")
 end
 
 def input_to_index(user_input)
+  puts "Please enter 1-9:"
   user_input.to_i - 1
 end
 
@@ -40,7 +41,7 @@ end
 
 
 def turn(board)
-  puts "Please enter 1-9:"
+  input_to_index(user_input)
   user_input = gets.strip
   input_to_index(user_input)
   index = input_to_index(user_input)
