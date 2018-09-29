@@ -51,6 +51,7 @@ def turn(board)
     display_board(board)
   else
     puts "That was an invalid selection. Please choose again!"
+    input_to_index(user_input)
 
   end
 
